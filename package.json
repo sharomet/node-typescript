@@ -1,0 +1,14 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/es6-shim": "^0.31.38",
+    "@types/express": "^4.16.0",
+    "express": "^4.16.4"
+  }
+}
