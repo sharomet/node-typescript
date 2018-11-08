@@ -7,8 +7,11 @@ export class Router {
     public userController: UserController = new UserController();
 
     public routes(app: any): void {
-        app.route('/user').get(this.userController.getUser);
-        app.route('/user/:id').get(this.userController.getUserById);
+
+        
+
+        app.route('/api/user').get(this.userController.getUser);
+        app.route('/api/user/:id').get(this.userController.getUserById);
 
     }
 
