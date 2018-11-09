@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { UserController } from '../controllers/User.controller';
+import { UserController } from '../controllers/';
 
 export class Router {
 
@@ -8,9 +8,7 @@ export class Router {
 
     public routes(app: any): void {
 
-        
-
-        app.route('/api/user').get(this.userController.getUser);
+        app.route('/api/users').get(this.userController.getUser);
         app.route('/api/user/:id').get(this.userController.getUserById);
 
     }
